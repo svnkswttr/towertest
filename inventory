@@ -26,48 +26,47 @@
 ####################
 ### collections
 ####################
+#[app1:children]
+#app1_test
+#app1_staging
+#app1_load
+#app1_prod
 
-[app1:children]
-app1_test
-app1_staging
-app1_load
-app1_prod
+#[app1_test:children]
+#app1_test_web
+#app1_test_app
+#app1_test_db
 
-[app1_test:children]
-app1_test_web
-app1_test_app
-app1_test_db
+#[app1_staging:children]
+#app1_staging_web
+#app1_staging_app
+#app1_staging_db
 
-[app1_staging:children]
-app1_staging_web
-app1_staging_app
-app1_staging_db
+#[app1_load:children]
+#app1_load_web
+#app1_load_app
+#app1_load_db
 
-[app1_load:children]
-app1_load_web
-app1_load_app
-app1_load_db
+#[app1_prod:children]
+#app1_prod_web
+#app1_prod_app
+#app1_prod_db
 
-[app1_prod:children]
-app1_prod_web
-app1_prod_app
-app1_prod_db
+#[app1_web]
+#app1_test_web
+#app1_staging_web
+#app1_load_web
+#app1_prod_web
 
-[app1_web]
-app1_test_web
-app1_staging_web
-app1_load_web
-app1_prod_web
+#[app1_app]
+#app1_test_app
+#app1_staging_app
+#app1_load_app
+#app1_prod_app
 
-[app1_app]
-app1_test_app
-app1_staging_app
-app1_load_app
-app1_prod_app
-
-[app1_db]
-app1_test_db
-app1_staging_db
-app1_load_db
-app1_prod_db
+#[app1_db]
+#app1_test_db
+#app1_staging_db
+#app1_load_db
+#app1_prod_db
 
