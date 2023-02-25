@@ -1,6 +1,6 @@
 ---
 - name: Restart apache on all webserver instances one after the other
-  hosts: app1_web
+  hosts: app1_dev_web
   serial: 1
   max_fail_percentage: 10
   
