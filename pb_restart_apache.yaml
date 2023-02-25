@@ -1,0 +1,11 @@
+---
+- name: Restart apache on all webserver instances one after the other
+  hosts: app1_web
+  serial: 1
+  max_fail_percentage: 10
+  
+  tasks_
+    - name: make sure the apache service is restarted
+      service:
+        name: httpd
+        state: restarted
