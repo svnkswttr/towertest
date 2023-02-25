@@ -1,6 +1,6 @@
 
 - name: Hello World Sample
-  hosts: all
+  hosts: app1_test_web
   tasks:
     - name: Hello Message
       debug:
