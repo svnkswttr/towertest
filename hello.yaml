@@ -5,3 +5,7 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+    - name: Install rsync
+      ansible.builtin.yum:
+        name: rsync
+        state: latest
