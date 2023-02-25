@@ -4,7 +4,7 @@
   serial: 1
   max_fail_percentage: 10
   
-  tasks_
+  tasks:
     - name: make sure the apache service is restarted
       service:
         name: httpd
