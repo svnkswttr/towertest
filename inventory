@@ -1,6 +1,11 @@
 [app1_test_web]
+192.168.130.1
+
 [app1_test_app]
+192.168.130.2
+
 [app1_test_db]
+192.168.130.3
 
 [app1_staging_web]
 [app1_staging_app]
@@ -17,6 +22,10 @@
 [app1_prod_web]
 [app1_prod_app]
 [app1_prod_db]
+
+####################
+### collections
+####################
 
 [app1:children]
 app1_test
